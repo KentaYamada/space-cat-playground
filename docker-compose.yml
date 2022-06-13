@@ -1,0 +1,9 @@
+version: '3.4'
+
+services:
+  c-playground:
+    build:
+      context: ./docker/
+      dockerfile: Dockerfile
+    volumes:
+      - ./src:/home/c-playground
